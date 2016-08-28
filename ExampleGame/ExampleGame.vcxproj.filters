@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Structure">
+      <UniqueIdentifier>{542df7cb-3378-4db5-b8bd-ddf096d15c71}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Structure\Main.cpp">
+      <Filter>Structure</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

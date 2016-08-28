@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Application\Application.cpp" />
+    <ClCompile Include="..\Source\Logic\Components\ButtonComponent.cpp" />
+    <ClCompile Include="..\Source\Logic\Components\CameraComponent.cpp" />
+    <ClCompile Include="..\Source\Logic\Components\LuaScriptComponent.cpp" />
+    <ClCompile Include="..\Source\Logic\Components\MovementComponent.cpp" />
+    <ClCompile Include="..\Source\Logic\Components\PlayerControllerComponent.cpp" />
+    <ClCompile Include="..\Source\Logic\Components\RenderComponent.cpp" />
+    <ClCompile Include="..\Source\Logic\Components\TransformComponent.cpp" />
+    <ClCompile Include="..\Source\Logic\GameObject\GameObject.cpp" />
+    <ClCompile Include="..\Source\Logic\GameObject\GameObjectManager.cpp" />
+    <ClCompile Include="..\Source\Logic\LuaPlus\LuaPlusSingleton.cpp" />
+    <ClCompile Include="..\Source\Logic\ResourceManager\BaseVirtual\Resource.cpp" />
+    <ClCompile Include="..\Source\Logic\ResourceManager\BaseVirtual\ResourceManager.cpp" />
+    <ClCompile Include="..\Source\Logic\ResourceManager\Sdl\SdlResourceManager.cpp" />
+    <ClCompile Include="..\Source\Logic\ResourceManager\TiledManager\TiledManager.cpp" />
+    <ClCompile Include="..\Source\Logic\ResourceManager\Xml\XmlReader.cpp" />
+    <ClCompile Include="..\Source\Logic\ResourceManager\ZLib\ZLibLoader.cpp" />
+    <ClCompile Include="..\Source\Rendering\NullRenderer\NullRendererLayer.cpp" />
+    <ClCompile Include="..\Source\Rendering\NullRenderer\NullTexture.cpp" />
+    <ClCompile Include="..\Source\Rendering\SDL\SdlRenderDevice.cpp" />
+    <ClCompile Include="..\Source\Rendering\SDL\SdlTexture.cpp" />
+    <ClCompile Include="..\Source\Rendering\Sprite.cpp" />
+    <ClCompile Include="..\Source\Utilities\EventSystem\EventSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Application\Application.h" />
+    <ClInclude Include="..\Source\Logic\Components\ButtonComponent.h" />
+    <ClInclude Include="..\Source\Logic\Components\CameraComponent.h" />
+    <ClInclude Include="..\Source\Logic\Components\ColliderComponent.h" />
+    <ClInclude Include="..\Source\Logic\Components\Component.h" />
+    <ClInclude Include="..\Source\Logic\Components\ComponentIncludes.h" />
+    <ClInclude Include="..\Source\Logic\Components\LuaScriptComponent.h" />
+    <ClInclude Include="..\Source\Logic\Components\MovementComponent.h" />
+    <ClInclude Include="..\Source\Logic\Components\PlayerControllerComponent.h" />
+    <ClInclude Include="..\Source\Logic\Components\RenderComponent.h" />
+    <ClInclude Include="..\Source\Logic\Components\TransformComponent.h" />
+    <ClInclude Include="..\Source\Logic\GameObject\GameObject.h" />
+    <ClInclude Include="..\Source\Logic\GameObject\GameObjectManager.h" />
+    <ClInclude Include="..\Source\Logic\LuaPlus\LuaPlusSingleton.h" />
+    <ClInclude Include="..\Source\Logic\ResourceManager\BaseVirtual\Resource.h" />
+    <ClInclude Include="..\Source\Logic\ResourceManager\BaseVirtual\ResourceManager.h" />
+    <ClInclude Include="..\Source\Logic\ResourceManager\Sdl\SdlResourceManager.h" />
+    <ClInclude Include="..\Source\Logic\ResourceManager\TiledManager\TiledManager.h" />
+    <ClInclude Include="..\Source\Logic\ResourceManager\TiledManager\TiledObjectLayer.h" />
+    <ClInclude Include="..\Source\Logic\ResourceManager\TiledManager\TileSet.h" />
+    <ClInclude Include="..\Source\Logic\ResourceManager\Xml\XmlReader.h" />
+    <ClInclude Include="..\Source\Logic\ResourceManager\ZLib\ZLibLoader.h" />
+    <ClInclude Include="..\Source\Rendering\NullRenderer\NullRendererLayer.h" />
+    <ClInclude Include="..\Source\Rendering\NullRenderer\NullTexture.h" />
+    <ClInclude Include="..\Source\Rendering\RenderDevice.h" />
+    <ClInclude Include="..\Source\Rendering\RenderFactory.h" />
+    <ClInclude Include="..\Source\Rendering\SDL\SdlRenderDevice.h" />
+    <ClInclude Include="..\Source\Rendering\SDL\SdlTexture.h" />
+    <ClInclude Include="..\Source\Rendering\Sprite.h" />
+    <ClInclude Include="..\Source\Rendering\Texture.h" />
+    <ClInclude Include="..\Source\Utilities\DebugLog.h" />
+    <ClInclude Include="..\Source\Utilities\EventSystem\Event.h" />
+    <ClInclude Include="..\Source\Utilities\EventSystem\EventListener.h" />
+    <ClInclude Include="..\Source\Utilities\EventSystem\EventSystem.h" />
+    <ClInclude Include="..\Source\Utilities\EventSystem\Events\CameraMoveEvent.h" />
+    <ClInclude Include="..\Source\Utilities\EventSystem\Events\EventsInclude.h" />
+    <ClInclude Include="..\Source\Utilities\EventSystem\Events\InputKeyEvent.h" />
+    <ClInclude Include="..\Source\Utilities\EventSystem\Events\MouseClickEvent.h" />
+    <ClInclude Include="..\Source\Utilities\EventSystem\Events\PlayerMovementEvent.h" />
+    <ClInclude Include="..\Source\Utilities\EventSystem\Events\QuitGameEvent.h" />
+    <ClInclude Include="..\Source\Utilities\EventSystem\Events\UpdateEvent.h" />
+    <ClInclude Include="..\Source\Utilities\EventSystem\EventTypes.h" />
+    <ClInclude Include="..\Source\Utilities\Macros.h" />
+    <ClInclude Include="..\Source\Utilities\RandomGenerator.h" />
+    <ClInclude Include="..\Source\Utilities\Vector3.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{74E8A1E5-AAD6-4DE7-8F38-C9942F02FD0D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>JakubStopyra_GameEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>JSEngine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>D:\Program Files (x86)\Visual Leak Detector\bin\Win32;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>D:\Program Files (x86)\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)Bin\Engine\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\Engine\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>Includes\SDL\SDL2\include;Includes\SDL\SDL2_mixer\include;Includes\SDL\SDL2_image\include;Includes\SDL\SDL2_ttf\include;Includes\TinyXml\include;Includes\ZLib\include;Includes\Lua\include;$(IncludePath);d:\Program Files (x86)\Visual Leak Detector\include</IncludePath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <OutDir>$(SolutionDir)Bin\Engine\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\Engine\</IntDir>
+    <LibraryPath>d:\Program Files (x86)\Visual Leak Detector\lib\Win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <ExecutablePath>C:\Program Files (x86)\Visual Leak Detector\bin\Win32;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Program Files (x86)\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)Bin\Engine\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\Engine\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath);d:\Program Files (x86)\Visual Leak Detector\include</IncludePath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <OutDir>$(SolutionDir)Bin\Engine\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\Engine\</IntDir>
+    <LibraryPath>d:\Program Files (x86)\Visual Leak Detector\lib\Win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source;$(SolutionDir)Source\Includes\SDL\SDL2\include;$(SolutionDir)Source\Includes\SDL\SDL2_mixer\include;$(SolutionDir)Source\Includes\SDL\SDL2_image\include;$(SolutionDir)Source\Includes\SDL\SDL2_ttf\include;$(SolutionDir)Source\Includes\TinyXml\include;$(SolutionDir)Source\Includes\ZLib\include;$(SolutionDir)Source\Includes\Lua\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Source\Includes\Lua\lib\x86;$(SolutionDir)Source\Includes\SDL\SDL2\lib\x86;$(SolutionDir)Source\Includes\SDL\SDL2_mixer\lib\x86;$(SolutionDir)Source\Includes\SDL\SDL2_image\lib\x86;$(SolutionDir)Source\Includes\SDL\SDL2_ttf\lib\x86;$(SolutionDir)Source\Includes\TinyXml\lib\x86;$(SolutionDir)Source\Includes\ZLib\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;tinyxml2.lib;zdll.lib;LuaPlus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4098 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(SolutionDir)Source\Includes\SDL\SDL2\lib\x86\*.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\SDL\SDL2_mixer\lib\x86\*.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\SDL\SDL2_image\lib\x86\*.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\SDL\SDL2_image\lib\x86\zlib1.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\TinyXml\lib\x86\*.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\ZLib\lib\x86\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source;$(SolutionDir)Source\Includes\SDL\SDL2\include;$(SolutionDir)Source\Includes\SDL\SDL2_mixer\include;$(SolutionDir)Source\Includes\SDL\SDL2_image\include;$(SolutionDir)Source\Includes\SDL\SDL2_ttf\include;$(SolutionDir)Source\Includes\TinyXml\include;$(SolutionDir)Source\Includes\ZLib\include;$(SolutionDir)Source\Includes\Lua\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Source\Includes\Lua\lib\x64;$(SolutionDir)Source\Includes\SDL\SDL2\lib\x64;$(SolutionDir)Source\Includes\SDL\SDL2_mixer\lib\x64;$(SolutionDir)Source\Includes\SDL\SDL2_image\lib\x64;$(SolutionDir)Source\Includes\SDL\SDL2_ttf\lib\x64;$(SolutionDir)Source\Includes\TinyXml\lib\x64;$(SolutionDir)Source\Includes\ZLib\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;tinyxml2.lib;LuaPlus.lib;zlibwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <AdditionalOptions>/ignore:4098 %(AdditionalOptions)</AdditionalOptions>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(SolutionDir)Source\Includes\SDL\SDL2\lib\x64\*.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\SDL\SDL2_mixer\lib\x64\*.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\SDL\SDL2_image\lib\x64\*.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\SDL\SDL2_image\lib\x64\zlib1.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\TinyXml\lib\x64\*.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\ZLib\lib\x64\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source;$(SolutionDir)Source\Includes\SDL\SDL2\include;$(SolutionDir)Source\Includes\SDL\SDL2_mixer\include;$(SolutionDir)Source\Includes\SDL\SDL2_image\include;$(SolutionDir)Source\Includes\SDL\SDL2_ttf\include;$(SolutionDir)Source\Includes\TinyXml\include;$(SolutionDir)Source\Includes\ZLib\include;$(SolutionDir)Source\Includes\Lua\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Source\Includes\Lua\lib\x86;$(SolutionDir)Source\Includes\SDL\SDL2\lib\x86;$(SolutionDir)Source\Includes\SDL\SDL2_mixer\lib\x86;$(SolutionDir)Source\Includes\SDL\SDL2_image\lib\x86;$(SolutionDir)Source\Includes\SDL\SDL2_ttf\lib\x86;$(SolutionDir)Source\Includes\TinyXml\lib\x86;$(SolutionDir)Source\Includes\ZLib\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;tinyxml2.lib;zdll.lib;LuaPlus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4098 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(SolutionDir)Source\Includes\SDL\SDL2\lib\x86\*.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\SDL\SDL2_mixer\lib\x86\*.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\SDL\SDL2_image\lib\x86\*.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\SDL\SDL2_image\lib\x86\zlib1.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\TinyXml\lib\x86\*.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\ZLib\lib\x86\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source;$(SolutionDir)Source\Includes\SDL\SDL2\include;$(SolutionDir)Source\Includes\SDL\SDL2_mixer\include;$(SolutionDir)Source\Includes\SDL\SDL2_image\include;$(SolutionDir)Source\Includes\SDL\SDL2_ttf\include;$(SolutionDir)Source\Includes\TinyXml\include;$(SolutionDir)Source\Includes\ZLib\include;$(SolutionDir)Source\Includes\Lua\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Source\Includes\Lua\lib\x64;$(SolutionDir)Source\Includes\SDL\SDL2\lib\x64;$(SolutionDir)Source\Includes\SDL\SDL2_mixer\lib\x64;$(SolutionDir)Source\Includes\SDL\SDL2_image\lib\x64;$(SolutionDir)Source\Includes\SDL\SDL2_ttf\lib\x64;$(SolutionDir)Source\Includes\TinyXml\lib\x64;$(SolutionDir)Source\Includes\ZLib\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;tinyxml2.lib;LuaPlus.lib;zlibwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4098 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(SolutionDir)Source\Includes\SDL\SDL2\lib\x64\*.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\SDL\SDL2_mixer\lib\x64\*.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\SDL\SDL2_image\lib\x64\*.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\SDL\SDL2_image\lib\x64\zlib1.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\TinyXml\lib\x64\*.dll" "$(OutDir)"
+xcopy /Y "$(SolutionDir)Source\Includes\ZLib\lib\x64\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

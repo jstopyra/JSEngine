@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Application">
+      <UniqueIdentifier>{71b3442b-3c8c-408f-9591-bc3859be2ab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{01b1ccd9-6886-459d-9f72-97511a3b8582}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Components">
+      <UniqueIdentifier>{1037f9e6-5039-45fd-911e-7d2b9ec6aad0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\GameObject">
+      <UniqueIdentifier>{cfceaeef-72c2-483d-9b08-c0086ea5a926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\LuaPlus">
+      <UniqueIdentifier>{217017a1-ad8b-414b-afe6-1659b16ec2c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\ResourceManager">
+      <UniqueIdentifier>{21fd5773-2d6e-491d-b7d7-17177c6dc947}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\ResourceManager\BaseVirtual">
+      <UniqueIdentifier>{ee98337c-38d4-4f95-b2e3-d41b030c4470}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\ResourceManager\Sdl">
+      <UniqueIdentifier>{6a23e9c6-1c05-449a-9332-d83cb0c8919b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\ResourceManager\TiledManager">
+      <UniqueIdentifier>{fcf82f80-0734-4712-bb67-e98a252a848d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\ResourceManager\Xml">
+      <UniqueIdentifier>{0b6834ef-0d3e-4d07-a5ce-94e42b28dbfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\ResourceManager\Zlib">
+      <UniqueIdentifier>{28d50276-4f18-4fc4-accd-7b7ad44b6fa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering">
+      <UniqueIdentifier>{649abfa7-b0fd-4573-87ce-afaa629d4f09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\NullRenderer">
+      <UniqueIdentifier>{7463bf1b-2289-4625-9317-39d5fefefd40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\SDL">
+      <UniqueIdentifier>{b01f91cd-1a1b-42f8-9688-292607df7975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{1398e340-13ff-4dfc-95f2-d6e916a39df4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\EventSystem">
+      <UniqueIdentifier>{96f7184f-17ad-4cbd-b1b9-f6689d866d94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\EventSystem\Events">
+      <UniqueIdentifier>{622dd4c8-aa0b-4bdb-8bb0-408596fc2128}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Application\Application.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Logic\Components\ButtonComponent.cpp">
+      <Filter>Logic\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Logic\Components\CameraComponent.cpp">
+      <Filter>Logic\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Logic\Components\LuaScriptComponent.cpp">
+      <Filter>Logic\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Logic\Components\MovementComponent.cpp">
+      <Filter>Logic\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Logic\Components\PlayerControllerComponent.cpp">
+      <Filter>Logic\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Logic\Components\RenderComponent.cpp">
+      <Filter>Logic\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Logic\Components\TransformComponent.cpp">
+      <Filter>Logic\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Logic\GameObject\GameObject.cpp">
+      <Filter>Logic\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Logic\GameObject\GameObjectManager.cpp">
+      <Filter>Logic\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Logic\LuaPlus\LuaPlusSingleton.cpp">
+      <Filter>Logic\LuaPlus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Logic\ResourceManager\BaseVirtual\Resource.cpp">
+      <Filter>Logic\ResourceManager\BaseVirtual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Logic\ResourceManager\BaseVirtual\ResourceManager.cpp">
+      <Filter>Logic\ResourceManager\BaseVirtual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Logic\ResourceManager\Sdl\SdlResourceManager.cpp">
+      <Filter>Logic\ResourceManager\Sdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Logic\ResourceManager\TiledManager\TiledManager.cpp">
+      <Filter>Logic\ResourceManager\TiledManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Logic\ResourceManager\Xml\XmlReader.cpp">
+      <Filter>Logic\ResourceManager\Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Logic\ResourceManager\ZLib\ZLibLoader.cpp">
+      <Filter>Logic\ResourceManager\Zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Rendering\NullRenderer\NullRendererLayer.cpp">
+      <Filter>Rendering\NullRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Rendering\NullRenderer\NullTexture.cpp">
+      <Filter>Rendering\NullRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Rendering\SDL\SdlRenderDevice.cpp">
+      <Filter>Rendering\SDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Rendering\SDL\SdlTexture.cpp">
+      <Filter>Rendering\SDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Rendering\Sprite.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utilities\EventSystem\EventSystem.cpp">
+      <Filter>Utilities\EventSystem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Application\Application.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\Components\ButtonComponent.h">
+      <Filter>Logic\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\Components\CameraComponent.h">
+      <Filter>Logic\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\Components\ColliderComponent.h">
+      <Filter>Logic\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\Components\Component.h">
+      <Filter>Logic\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\Components\ComponentIncludes.h">
+      <Filter>Logic\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\Components\LuaScriptComponent.h">
+      <Filter>Logic\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\Components\MovementComponent.h">
+      <Filter>Logic\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\Components\PlayerControllerComponent.h">
+      <Filter>Logic\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\Components\RenderComponent.h">
+      <Filter>Logic\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\Components\TransformComponent.h">
+      <Filter>Logic\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\GameObject\GameObject.h">
+      <Filter>Logic\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\GameObject\GameObjectManager.h">
+      <Filter>Logic\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\LuaPlus\LuaPlusSingleton.h">
+      <Filter>Logic\LuaPlus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\ResourceManager\BaseVirtual\Resource.h">
+      <Filter>Logic\ResourceManager\BaseVirtual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\ResourceManager\BaseVirtual\ResourceManager.h">
+      <Filter>Logic\ResourceManager\BaseVirtual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\ResourceManager\Sdl\SdlResourceManager.h">
+      <Filter>Logic\ResourceManager\Sdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\ResourceManager\TiledManager\TileSet.h">
+      <Filter>Logic\ResourceManager\TiledManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\ResourceManager\TiledManager\TiledObjectLayer.h">
+      <Filter>Logic\ResourceManager\TiledManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\ResourceManager\TiledManager\TiledManager.h">
+      <Filter>Logic\ResourceManager\TiledManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\ResourceManager\Xml\XmlReader.h">
+      <Filter>Logic\ResourceManager\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\ResourceManager\ZLib\ZLibLoader.h">
+      <Filter>Logic\ResourceManager\Zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Rendering\NullRenderer\NullTexture.h">
+      <Filter>Rendering\NullRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Rendering\NullRenderer\NullRendererLayer.h">
+      <Filter>Rendering\NullRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Rendering\SDL\SdlTexture.h">
+      <Filter>Rendering\SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Rendering\SDL\SdlRenderDevice.h">
+      <Filter>Rendering\SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Rendering\RenderDevice.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Rendering\RenderFactory.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Rendering\Sprite.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Rendering\Texture.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utilities\DebugLog.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utilities\Macros.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utilities\RandomGenerator.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utilities\Vector3.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utilities\EventSystem\Event.h">
+      <Filter>Utilities\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utilities\EventSystem\EventListener.h">
+      <Filter>Utilities\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utilities\EventSystem\EventSystem.h">
+      <Filter>Utilities\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utilities\EventSystem\EventTypes.h">
+      <Filter>Utilities\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utilities\EventSystem\Events\CameraMoveEvent.h">
+      <Filter>Utilities\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utilities\EventSystem\Events\EventsInclude.h">
+      <Filter>Utilities\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utilities\EventSystem\Events\InputKeyEvent.h">
+      <Filter>Utilities\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utilities\EventSystem\Events\MouseClickEvent.h">
+      <Filter>Utilities\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utilities\EventSystem\Events\PlayerMovementEvent.h">
+      <Filter>Utilities\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utilities\EventSystem\Events\QuitGameEvent.h">
+      <Filter>Utilities\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utilities\EventSystem\Events\UpdateEvent.h">
+      <Filter>Utilities\EventSystem\Events</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
